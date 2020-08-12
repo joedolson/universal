@@ -1,8 +1,7 @@
 			</div>
 		</main>
 	</div> <!-- #content .content -->
-<div id="sidebar" role="complementary" class="sidebar universal-clear" aria-labelledby="sidebar-header">
-	<h1 class="screen-reader-text" id="sidebar-header"><?php _e( 'Sidebar', 'universal' ); ?></h1>
+<div id="sidebar" role="complementary" class="sidebar universal-clear" aria-label="<?php _e( 'Sidebar', 'universal' ); ?>">
 	<?php echo apply_filters( 'universal_top_of_sidebar', '' ); ?>
 	<?php if ( is_front_page() || is_page_template( 'page-full-width.php' ) ) {
 		$sidebars = wp_get_sidebars_widgets();

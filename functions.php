@@ -55,7 +55,7 @@ if ( ! function_exists( 'universal_setup' ) ) {
 				'default-color' => 'f5f5f5',
 				'default-image' => '',
 			) ) );
-		add_theme_support( 'woocommerce' );			
+		add_theme_support( 'woocommerce' );
 		$font_url = apply_filters( 'universal_custom_font', "//fonts.googleapis.com/css?family=Raleway:400,700" );
 		add_editor_style( array( 'css/editor.css', str_replace( ',', '%2C', $font_url ) ) );
 		
@@ -86,9 +86,9 @@ if ( ! function_exists( 'universal_widgets_init' ) ) {
 			'description' => __( 'Widgets in this region will appear on all posts and post archives', 'universal' ),
 			'id' => 'ps1',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div>',
 			'before_title' => '<h2>',
-			'after_title' => '</h2><div class="widget-inner">',
+			'after_title' => '</h2>',
 		));
 
 		register_sidebar( array(
@@ -96,9 +96,9 @@ if ( ! function_exists( 'universal_widgets_init' ) ) {
 			'description' => __( 'Add up to 5 widgets to show on the bottom of your front page.', 'universal' ),
 			'id' => 'ps2',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div>',
 			'before_title' => '<h2>',
-			'after_title' => '</h2><div class="widget-inner">',
+			'after_title' => '</h2>',
 		));
 
 		register_sidebar( array(
@@ -106,9 +106,9 @@ if ( ! function_exists( 'universal_widgets_init' ) ) {
 			'description' => __( 'Widgets in this region will appear on WordPress Pages.', 'universal' ),
 			'id' => 'ps3',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div>',
 			'before_title' => '<h2>',
-			'after_title' => '</h2><div class="widget-inner">',
+			'after_title' => '</h2>',
 		));
 
 		register_sidebar( array(
@@ -116,9 +116,9 @@ if ( ! function_exists( 'universal_widgets_init' ) ) {
 			'description' => __( 'These widgets appear globally on posts and pages, excluding the front page.', 'universal' ),
 			'id' => 'ps4',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div>',
 			'before_title' => '<h2>',
-			'after_title' => '</h2><div class="widget-inner">',
+			'after_title' => '</h2>',
 		));
 
 		register_sidebar( array(
@@ -126,9 +126,9 @@ if ( ! function_exists( 'universal_widgets_init' ) ) {
 			'description' => __( 'These widgets appear globally on posts and pages, excluding the front page.', 'universal' ),
 			'id' => 'ps5',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div>',
 			'before_title' => '<h2>',
-			'after_title' => '</h2><div class="widget-inner">',
+			'after_title' => '</h2>',
 		));
 	}
 }

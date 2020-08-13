@@ -3,8 +3,8 @@ Contributors: joedolson
 Donate link: https://www.joedolson.com/donate/
 Tags: accessibility-ready, translation-ready, responsive-layout, two-columns, black, blue, gray, white, light, custom-header, custom-menu, custom-background, custom-colors, featured-images, sticky-post
 Requires at least: 4.0.5
-Tested up to: 4.2
-Stable tag: 1.0.1
+Tested up to: 5.5
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Universal: ready for accessibility, responsive, and waiting for your content. 
@@ -37,6 +37,13 @@ Nothing yet!
 3. Go to Appearance > Customize to customize features of the theme.
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Update for current theme check standards.
+* Eliminate extraneous H1 headings.
+* Remove .widget-inner, as it breaks layouts when widgets with no titles are used.
+
 
 = 1.0.1 =
 

@@ -33,8 +33,8 @@
 		?>
 		<?php echo apply_filters( 'universal_before_header_role', '' ); ?>
 		<div id="header" class='header'>
-			<header role="banner">
-				<?php echo apply_filters( 'universal_top_of_header', '' ); ?>								
+			<header>
+				<?php echo apply_filters( 'universal_top_of_header', '' ); ?>
 				<div class="text-header">
 					<?php 
 					/**
@@ -65,8 +65,7 @@
 				 * hidden heading: provides navigational structure to site for scanning with screen reader
 				 */
 			?>
-			<nav role="navigation" aria-label='<?php _e( 'Primary Menu ', 'universal' ); ?>'>
-			<h1 class="screen-reader-text"><?php _e( 'Primary Menu', 'universal' ); ?></h1>
+			<nav aria-label='<?php _e( 'Primary Menu ', 'universal' ); ?>'>
 			<button class='menu-toggle' title='<?php _e( 'Toggle Menu', 'universal' ); ?>' aria-controls='menu-primary-id' aria-expanded='false'><span class="maybe-hide"><?php _e( 'Toggle Menu','universal' ); ?></span></button>			
 			<?php wp_nav_menu( array( 'theme_location'=>'primary', 'menu_id'=>'menu-primary-id' ) ); ?>
 			</nav>
@@ -74,6 +73,6 @@
 		<?php echo apply_filters( 'universal_after_primary_menu_role', '' ); ?>
 		<div id="page" class="page-wrapper universal-clear">
 			<div id="content" class="content universal-clear" tabindex="-1">
-				<main role="main">
+				<main>
 					<div class='post-wrapper'>
 					<?php echo apply_filters( 'universal_before_posts', '' ); ?>

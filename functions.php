@@ -161,7 +161,7 @@ add_filter( 'universal_end_of_header', 'universal_social_media_menu' );
 if ( ! function_exists( 'universal_social_media_menu' ) ) {
 	function universal_social_media_menu( $return ) {
 		if ( has_nav_menu( 'social-networks' ) ) {
-			$return = "<div class='social-networks' role='navigation' aria-label='Social Media'>";
+			$return = "<div class='social-networks' aria-label='Social Media'>";
 			$return .= wp_nav_menu( array( 'theme_location'=>'social-networks', 'fallback_cb'=>'', 'echo'=>false, 'link_before'=>'<span class="screen-reader-text">', 'link_after'=>'</span>' ) );
 			$return .= "</div>";
 		}

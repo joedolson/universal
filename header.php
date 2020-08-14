@@ -54,10 +54,10 @@
 						<div class='site-description'><?php bloginfo('description'); ?></div>
 					<?php } ?>
 				</div>
-				<?php echo apply_filters( 'universal_end_of_header', '' ); ?>	
+				<?php echo apply_filters( 'universal_end_of_header', '' ); ?>
 			</header>
 		</div>
-		<?php echo apply_filters( 'universal_before_primary_menu_role', '' ); ?>		
+		<?php echo apply_filters( 'universal_before_primary_menu_role', '' ); ?>
 		<div class='primary-menu'>
 			<?php
 				/*
@@ -66,7 +66,7 @@
 				 */
 			?>
 			<nav aria-label='<?php _e( 'Primary Menu ', 'universal' ); ?>'>
-			<button class='menu-toggle' title='<?php _e( 'Toggle Menu', 'universal' ); ?>' aria-controls='menu-primary-id' aria-expanded='false'><span class="maybe-hide"><?php _e( 'Toggle Menu','universal' ); ?></span></button>			
+			<button class='menu-toggle' title='<?php _e( 'Toggle Menu', 'universal' ); ?>' aria-controls='menu-primary-id' aria-expanded='false'><span class="maybe-hide"><?php _e( 'Toggle Menu','universal' ); ?></span></button>
 			<?php wp_nav_menu( array( 'theme_location'=>'primary', 'menu_id'=>'menu-primary-id' ) ); ?>
 			</nav>
 		</div>

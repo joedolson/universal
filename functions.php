@@ -52,7 +52,7 @@ if ( ! function_exists( 'universal_setup' ) ) {
 				'uploads' => true
 			) ) );
 		add_theme_support( 'custom-background', apply_filters( 'universal_custom_background_args', array(
-				'default-color' => 'f5f5f5',
+				'default-color' => '344f92',
 				'default-image' => '',
 			) ) );
 		add_theme_support( 'woocommerce' );

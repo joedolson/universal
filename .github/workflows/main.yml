@@ -27,3 +27,4 @@ jobs:
       if: ${{ always() }}
       with:
         name: Screenshots
+        path: ${{ steps.test.outputs.screenshots }}

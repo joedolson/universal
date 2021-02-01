@@ -2,9 +2,6 @@ name: Test My Theme
 
 on:
   push:
-    branches: [ main ] ## Change the branch name to match yours
-  pull_request:
-    branches: [ main ] ## Change the branch name to match yours
 
 
 jobs:

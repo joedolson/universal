@@ -19,7 +19,7 @@ jobs:
       id: test
       uses: Wordpress/theme-review-action@trunk
       with:
-        root-folder: /
+        root-folder: src
         accessible-ready: true
         ui-debug: true
 
